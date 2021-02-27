@@ -9,6 +9,9 @@ using namespace std;
 int incrimentPitchCounter(int pitchCounter) {
 	return pitchCounter+1;
 }
+int decrimentPitchCounter(int pitchCounter) {
+	return pitchCounter - 1;
+}
 void blit() {
 	cout<<"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
 }
