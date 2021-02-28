@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Pitch Count";
+}
+
+<div class="text-center ">
+    <div class="ball">
+        <h1>The Count: </h1>
+        <h1>@Model.pitchCount</h1>
+    </div>
+    <form method="post" class="">
+        <input value="@Model.pitchCount" name="pitch" hidden />
+        <button asp-page-handler="IncrimentPitchCounter">Pitch</button>
+        <button asp-page-handler="DecrimentPitchCounter">Remove Pitch</button>
+    </form>
+</div>
+<style>
+    .ball{
+        width:250px;
+        height: 250px;
+        padding: 2rem;
+        border-radius:125px;
+        background-color: tan;
+    }
+</style>
